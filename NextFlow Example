@@ -1,0 +1,23 @@
+# A quick example workflow with nextflow in Kali Linux. 
+
+curl -s https://get.nextflow.io | bash #Downloadas Nexflow, puts it in /home/kali
+
+#This file is saved in *media/kali/Samsung/Users/Kai/Desktop/Nextflow script
+#Focus on the run, pull, and drop commands: 
+
+home/kali/nextflow # the location 
+home/kali/nextflow run 
+
+'Nextflow run can be used on a nextflow main.nf script or can be run directly from github repository. Let’s try this using a nextflow blast script developed by Iowa State’s Genome Informatic’s Facility (ISUGIF) by calling it directly from the Github repo.'
+
+alias nextflow="/home/kali/nextflow" # make sure there is no white space around the "=", shortcuts the nextflow directory 
+nextflow run isugifNF/blast --help
+
+
+nextflow run isugifNF/blast -profile test #runs a test dataset from ISUGIF
+
+EXECUTABLE OF THE ABOVE:
+
+curl -s https://get.nextflow.io | bash
+alias nextflow="/home/kali/nextflow"
+nextflow run isugifNF/blast -profile test
