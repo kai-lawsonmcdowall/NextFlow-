@@ -21,3 +21,13 @@ EXECUTABLE OF THE ABOVE:
 curl -s https://get.nextflow.io | bash
 alias nextflow="/home/kali/nextflow"
 nextflow run isugifNF/blast -profile test
+
+
+#Leveraging the Leeds Arc3 HPC cluster, followed the process on their webpage: 
+#https://arcdocs.leeds.ac.uk/getting_started/logon.html 
+
+ssh bs20kjlm@arc3.leeds.ac.uk # then asks for password and duo dual factor authentication. 
+
+
+~. # to exit the secure shell and return to the Kali Terminal
+
